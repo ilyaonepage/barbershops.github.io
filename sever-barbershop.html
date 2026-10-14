@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>СЕВЕР BARBERSHOP — мужские стрижки и борода в Ростове-на-Дону</title>
+<meta name="description" content="Мужские стрижки, fade и оформление бороды. Понятные цены, запись через Telegram. Демонстрационный сайт.">
+<meta name="theme-color" content="#121212">
+<meta property="og:title" content="СЕВЕР BARBERSHOP">
+<meta property="og:description" content="Мужские стрижки и оформление бороды в Ростове-на-Дону.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' fill='%23121212'/%3E%3Cpath d='M8 24V8h4l8 11V8h4v16h-4L12 13v11z' fill='%23b87a4b'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#121212;--panel:#1a1a1a;--line:#2d2d2d;--text:#efebe4;--mut:#a9a49b;--acc:#c0804f;--hf:"Oswald","Arial Narrow",Impact,sans-serif;--bf:"Inter",system-ui,Arial,sans-serif;--pad:clamp(16px,5vw,48px)}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px;-webkit-text-size-adjust:100%}
+body{background:var(--bg);color:var(--text);font:400 16px/1.55 var(--bf);overflow-x:hidden;padding-bottom:env(safe-area-inset-bottom,0)}
+a{color:inherit}
+img,svg{max-width:100%}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--pad)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h1,h2,h3{font-family:var(--hf);font-weight:600;text-transform:uppercase;line-height:1.05;letter-spacing:.01em}
+h2{font-size:clamp(30px,6vw,52px);margin-bottom:12px}
+.lead{color:var(--mut);max-width:56ch;margin-bottom:32px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:48px;padding:0 24px;border:1px solid var(--acc);background:var(--acc);color:#121212;font:600 15px var(--bf);text-decoration:none;cursor:pointer;border-radius:2px;transition:background .2s,color .2s}
+.btn:hover{background:transparent;color:var(--acc)}
+.btn.ghost{background:transparent;color:var(--text);border-color:#55524c}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.btn.sm{min-height:44px;padding:0 16px;font-size:14px}
+:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+/* header */
+header{position:sticky;top:0;z-index:20;background:rgba(18,18,18,.94);border-bottom:1px solid var(--line);padding-top:env(safe-area-inset-top,0)}
+.bar{display:flex;align-items:center;gap:16px;min-height:64px}
+.logo{font:600 22px var(--hf);letter-spacing:.08em;text-decoration:none;text-transform:uppercase;white-space:nowrap}
+.logo span{color:var(--acc)}
+nav{margin-left:auto;display:flex;gap:24px;align-items:center}
+nav a.l{text-decoration:none;color:var(--mut);font-size:14px;padding:12px 0}
+nav a.l:hover{color:var(--text)}
+.tel{white-space:nowrap;text-decoration:none;font-weight:500;font-size:14px}
+.burger{display:none;margin-left:auto;width:44px;height:44px;background:none;border:1px solid var(--line);color:var(--text);cursor:pointer}
+.burger span{display:block;width:20px;height:2px;background:currentColor;margin:5px auto}
+@media(max-width:860px){
+ .burger{display:block}
+ header .bar>.btn{display:none}
+ nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--bg);border-bottom:1px solid var(--line);padding:8px var(--pad) 20px}
+ nav.open{display:flex}
+ nav a.l{padding:14px 0;border-bottom:1px solid var(--line);font-size:17px}
+ nav .tel{padding:14px 0;font-size:17px}
+}
+/* hero */
+.hero{border-top:0;padding:0}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;min-height:calc(100svh - 64px);padding-top:40px;padding-bottom:40px}
+.kicker{color:var(--acc);font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:16px;font-weight:600}
+h1{font-size:clamp(44px,9vw,96px);margin-bottom:20px}
+h1 em{font-style:normal;color:var(--acc)}
+.hero p.lead{font-size:18px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:8px 28px;margin-top:32px;color:var(--mut);font-size:14px}
+.art{aspect-ratio:4/5;background:#171717;border:1px solid var(--line);position:relative;overflow:hidden}
+.art svg{width:100%;height:100%;display:block}
+@media(max-width:860px){.hero .wrap{grid-template-columns:1fr;min-height:0;gap:28px}.art{aspect-ratio:4/3;max-height:300px;width:100%;order:-1}}
+/* price */
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px}
+.tab{min-height:44px;padding:0 18px;background:none;border:1px solid var(--line);color:var(--mut);font:500 14px var(--bf);cursor:pointer;border-radius:2px}
+.tab[aria-selected=true]{border-color:var(--acc);color:var(--text);background:#1d1a17}
+.row{display:grid;grid-template-columns:1fr auto auto;gap:8px 24px;align-items:center;padding:18px 0;border-bottom:1px solid var(--line)}
+.row h3{font-size:22px}
+.row p{color:var(--mut);font-size:14px;margin-top:4px}
+.price{font:600 24px var(--hf);white-space:nowrap}
+.dur{color:var(--mut);font-size:13px;display:block;text-align:right;font-family:var(--bf);font-weight:400}
+@media(max-width:600px){.row{grid-template-columns:1fr auto}.row .btn{grid-column:1/-1;width:100%}}
+/* masters */
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.m{border:1px solid var(--line);background:var(--panel);display:flex;flex-direction:column}
+.m .ph{aspect-ratio:4/3;background:#222;border-bottom:1px solid var(--line)}
+.m .ph svg{width:100%;height:100%;display:block}
+.m .b{padding:20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.m h3{font-size:26px}
+.m .sp{color:var(--acc);font-size:13px;font-weight:600;letter-spacing:.06em;text-transform:uppercase}
+.m p{color:var(--mut);font-size:15px}
+.m .btn{margin-top:auto}
+@media(max-width:900px){.grid3{grid-template-columns:1fr}}
+/* steps + form */
+.two{display:grid;grid-template-columns:.8fr 1.2fr;gap:48px}
+ol.steps{list-style:none;padding:0;counter-reset:s}
+ol.steps li{counter-increment:s;display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--line)}
+ol.steps li::before{content:counter(s,decimal-leading-zero);font:600 28px var(--hf);color:var(--acc);min-width:44px}
+ol.steps b{display:block;font-weight:600}
+ol.steps span{color:var(--mut);font-size:14px}
+form{display:grid;gap:16px;background:var(--panel);border:1px solid var(--line);padding:clamp(18px,4vw,32px)}
+.f{display:grid;gap:6px}
+label{font-size:14px;font-weight:500}
+label small{color:var(--mut);font-weight:400}
+input,select,textarea{width:100%;min-height:48px;background:#121212;color:var(--text);border:1px solid #444;border-radius:2px;padding:12px;font:16px var(--bf)}
+textarea{min-height:88px;resize:vertical}
+input[aria-invalid=true],select[aria-invalid=true]{border-color:#e0705f}
+.err{color:#f08a7a;font-size:13px;min-height:0}
+.note{color:var(--mut);font-size:13px}
+.out{border:1px solid var(--acc);padding:16px;display:none;gap:12px}
+.out.show{display:grid}
+.out pre{white-space:pre-wrap;word-break:break-word;font:14px/1.5 var(--bf);color:var(--text)}
+@media(max-width:860px){.two{grid-template-columns:1fr;gap:28px}}
+/* contacts */
+dl.h{display:grid;grid-template-columns:auto 1fr;gap:10px 24px;margin:20px 0}
+dl.h dt{color:var(--mut)}
+dl.h dd{font-weight:500;text-align:right}
+dl.h .today{color:var(--acc)}
+.tag{display:inline-block;border:1px dashed #6b6358;color:var(--mut);font-size:12px;padding:2px 8px;margin-left:6px;vertical-align:middle}
+.final{text-align:center}
+.final h2{font-size:clamp(34px,8vw,72px)}
+.final .lead{margin-left:auto;margin-right:auto}
+.final .cta{justify-content:center}
+footer{border-top:1px solid var(--line);padding:32px 0 calc(32px + env(safe-area-inset-bottom,0));color:var(--mut);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer a{text-decoration:none}
+.demo{background:#1d1a17;color:var(--mut);font-size:12px;text-align:center;padding:6px var(--pad)}
+.rv{opacity:0;transform:translateY(12px);transition:opacity .6s,transform .6s}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="demo">Демонстрационный сайт: цены, адрес, мастера и контакты вымышлены</div>
+<header>
+ <div class="wrap bar">
+  <a class="logo" href="#top" aria-label="СЕВЕР BARBERSHOP, в начало"><span>С</span>ЕВЕР</a>
+  <button class="burger" id="burger" aria-label="Открыть меню" aria-expanded="false" aria-controls="nav"><span></span><span></span><span></span></button>
+  <nav id="nav" aria-label="Основная навигация">
+   <a class="l" href="#services">Услуги</a><a class="l" href="#masters">Мастера</a><a class="l" href="#booking">Запись</a><a class="l" href="#contacts">Адрес</a>
+   <a class="tel" id="navTel" href="#"></a>
+  </nav>
+  <a class="btn sm" href="#booking" data-book>Записаться</a>
+ </div>
+</header>
+<main id="top">
+<section class="hero">
+ <div class="wrap">
+  <div>
+   <p class="kicker" id="heroCity"></p>
+   <h1>Чёткая форма.<br><em>Без суеты.</em></h1>
+   <p class="lead">Мужские стрижки, fade и оформление бороды. Работаем по записи, цены на сайте — без сюрпризов в кассе.</p>
+   <div class="cta"><a class="btn" href="#booking" data-book>Записаться</a><a class="btn ghost" href="#services">Смотреть прайс</a></div>
+   <div class="facts"><span id="heroFrom"></span><span>3 мастера</span><span id="heroHours"></span></div>
+  </div>
+  <div class="art" role="img" aria-label="Иллюстрация: кресло барбера, зеркало и машинка для стрижки">
+   <svg viewBox="0 0 400 500" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+    <defs><pattern id="st" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="14" height="14" fill="#1b1b1b"/><rect width="6" height="14" fill="#202020"/></pattern></defs>
+    <rect width="400" height="500" fill="url(#st)"/>
+    <rect x="90" y="50" width="220" height="300" rx="110" fill="#121212" stroke="#c0804f" stroke-width="3"/>
+    <rect x="102" y="62" width="196" height="276" rx="98" fill="#262626"/>
+    <path d="M130 360h140l20 60H110z" fill="#2c2c2c" stroke="#3a3a3a"/>
+    <rect x="150" y="420" width="100" height="14" fill="#c0804f"/>
+    <rect x="190" y="434" width="20" height="46" fill="#3a3a3a"/>
+    <rect x="130" y="478" width="140" height="8" fill="#3a3a3a"/>
+    <g transform="translate(305 395) rotate(-25)"><rect width="22" height="70" rx="5" fill="#efebe4"/><rect y="62" width="22" height="14" fill="#c0804f"/></g>
+   </svg>
+  </div>
+ </div>
+</section>
+
+<section id="services" aria-labelledby="hs">
+ <div class="wrap rv">
+  <h2 id="hs">Услуги и цены</h2>
+  <p class="lead">Выберите услугу — она сразу попадёт в форму записи вместе с ценой.</p>
+  <div class="tabs" role="tablist" id="tabs" aria-label="Категории услуг"></div>
+  <div id="list" role="tabpanel"></div>
+  <p class="note" style="margin-top:16px">Цены демонстрационные. Итоговую стоимость подтверждает администратор.</p>
+ </div>
+</section>
+
+<section id="masters" aria-labelledby="hm">
+ <div class="wrap rv">
+  <h2 id="hm">Мастера</h2>
+  <p class="lead">Трое мастеров с разной специализацией. Не знаете, к кому — выберите «Любой мастер».</p>
+  <div class="grid3" id="mgrid"></div>
+ </div>
+</section>
+
+<section id="booking" aria-labelledby="hb">
+ <div class="wrap two rv">
+  <div>
+   <h2 id="hb">Как записаться</h2>
+   <ol class="steps">
+    <li><div><b>Выберите услугу</b><span>В прайсе или прямо в форме.</span></div></li>
+    <li><div><b>Выберите мастера</b><span>Или оставьте «Любой мастер».</span></div></li>
+    <li><div><b>Согласуйте время</b><span>Сообщение откроется в Telegram — администратор подтвердит удобное время.</span></div></li>
+   </ol>
+  </div>
+  <form id="form" novalidate>
+   <div class="f"><label for="fs">Услуга</label><select id="fs" required></select><div class="err" id="e-fs"></div></div>
+   <div class="f"><label for="fm">Мастер</label><select id="fm"></select></div>
+   <div class="f"><label for="fn">Имя</label><input id="fn" autocomplete="given-name" required><div class="err" id="e-fn"></div></div>
+   <div class="f"><label for="fc">Телефон или Telegram</label><input id="fc" autocomplete="tel" placeholder="+7 900 000-00-00 или @ник" required><div class="err" id="e-fc"></div></div>
+   <div class="f"><label for="ft">Удобные день и время <small>(необязательно)</small></label><input id="ft" placeholder="например, суббота после 15:00"></div>
+   <div class="f"><label for="fk">Комментарий <small>(необязательно)</small></label><textarea id="fk"></textarea></div>
+   <button class="btn" type="submit">Подготовить сообщение</button>
+   <p class="note">Заявка никуда не отправляется автоматически. По кнопке откроется Telegram с готовым текстом — отправляете его вы сами. Запись считается подтверждённой только после ответа администратора.</p>
+   <div class="out" id="out" aria-live="polite"><b>Сообщение готово:</b><pre id="msg"></pre><a class="btn" id="tg" target="_blank" rel="noopener">Открыть Telegram</a></div>
+  </form>
+ </div>
+</section>
+
+<section id="contacts" aria-labelledby="hc">
+ <div class="wrap two rv">
+  <div>
+   <h2 id="hc">Адрес и график</h2>
+   <p id="addr" style="font-weight:500"></p>
+   <dl class="h" id="hours"></dl>
+   <div class="cta"><a class="btn" id="route" target="_blank" rel="noopener">Построить маршрут</a><a class="btn ghost" id="callBtn"></a></div>
+  </div>
+  <div class="art" style="aspect-ratio:4/3" role="img" aria-label="Схематичная иллюстрация расположения">
+   <svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" aria-hidden="true"><rect width="400" height="300" fill="#1b1b1b"/><g stroke="#2d2d2d" stroke-width="10" fill="none"><path d="M0 90h400M0 210h400M110 0v300M290 0v300"/></g><g stroke="#3a3a3a" stroke-width="2"><path d="M0 40h400M0 150h400M0 260h400M50 0v300M200 0v300M345 0v300"/></g><circle cx="200" cy="150" r="22" fill="#c0804f" opacity=".25"/><circle cx="200" cy="150" r="9" fill="#c0804f"/></svg>
+  </div>
+ </div>
+</section>
+
+<section class="final" aria-labelledby="hf">
+ <div class="wrap rv">
+  <h2 id="hf">Готов к свежей стрижке?</h2>
+  <p class="lead">Выберите услугу, напишите нам — подтвердим время в течение рабочего дня.</p>
+  <div class="cta"><a class="btn" href="#booking" data-book>Записаться</a><a class="btn ghost" id="tgDirect" target="_blank" rel="noopener">Написать в Telegram</a><a class="btn ghost" id="callBtn2"></a></div>
+ </div>
+</section>
+</main>
+<footer>
+ <div class="wrap">
+  <div><b id="fName"></b><br>© <span id="yr"></span></div>
+  <div id="fContacts"></div>
+  <div>Форма не сохраняет данные на сервере: имя и контакт передаются только в ваше сообщение в Telegram.</div>
+ </div>
+</footer>
+
+<script>
+const CONFIG={
+ name:"СЕВЕР BARBERSHOP",city:"Ростов-на-Дону",
+ address:"ул. Примерная, 00 (адрес-заглушка — заменить)",
+ phone:"+70000000000",phoneView:"+7 (000) 000-00-00",
+ telegram:"sever_barber_demo", // ЗАМЕНИТЬ на реальный Telegram-ник администратора
+ hours:[["Пн–Пт","10:00–21:00"],["Сб","10:00–20:00"],["Вс","11:00–18:00"]],
+ cats:{cut:"Стрижки",beard:"Борода",combo:"Комплексы",extra:"Дополнительно"},
+ services:[
+  {id:"cut1",cat:"cut",name:"Мужская стрижка",desc:"Классика под ножницы и машинку",price:1500,min:60},
+  {id:"cut2",cat:"cut",name:"Стрижка Fade",desc:"Плавный переход, чёткие границы",price:1700,min:70},
+  {id:"cut3",cat:"cut",name:"Стрижка машинкой",desc:"Одна насадка, быстро и аккуратно",price:900,min:30},
+  {id:"cut4",cat:"cut",name:"Детская стрижка",desc:"До 12 лет",price:1200,min:40},
+  {id:"b1",cat:"beard",name:"Оформление бороды",desc:"Форма, контур, уход маслом",price:900,min:40},
+  {id:"b2",cat:"beard",name:"Королевское бритьё",desc:"Горячее полотенце и опасная бритва",price:1300,min:45},
+  {id:"c1",cat:"combo",name:"Стрижка + борода",desc:"Полный образ за один визит",price:2200,min:100},
+  {id:"x1",cat:"extra",name:"Камуфляж седины",desc:"Мягкое тонирование без резкого цвета",price:1200,min:30}
+ ],
+ masters:[
+  {id:"ar",name:"Артём К.",sp:"Fade и короткие стрижки",txt:"Работает с переходами и чёткой геометрией. Перед стрижкой уточняет, как вы укладываетесь утром, и подбирает длину под это.",svc:["Стрижка Fade","Стрижка машинкой"],ini:"А"},
+  {id:"dm",name:"Дмитрий Л.",sp:"Классика и ножницы",txt:"Любит аккуратные классические формы и работу ножницами по длине. Хорошо справляется с густыми и непослушными волосами.",svc:["Мужская стрижка","Детская стрижка"],ini:"Д"},
+  {id:"ma",name:"Марк С.",sp:"Борода и комплексный образ",txt:"Занимается бородой и бритьём, подбирает форму под овал лица. Часто делает связку «стрижка + борода».",svc:["Оформление бороды","Королевское бритьё","Стрижка + борода"],ini:"М"}
+ ]
+};
+const $=s=>document.querySelector(s),rub=n=>n.toLocaleString("ru-RU").replace(/\u00a0/g," ")+" ₽";
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const C=CONFIG,svcById=id=>C.services.find(s=>s.id===id);
+let cat="cut";
+/* static data */
+document.title=C.name+" — мужские стрижки и борода в "+"Ростове-на-Дону";
+$("#heroCity").textContent=C.city+" · барбершоп";
+$("#heroFrom").textContent="от "+rub(Math.min(...C.services.map(s=>s.price)));
+$("#heroHours").textContent="Открыто ежедневно";
+["#navTel"].forEach(s=>{const a=$(s);a.href="tel:"+C.phone;a.textContent=C.phoneView});
+["#callBtn","#callBtn2"].forEach(s=>{const a=$(s);a.href="tel:"+C.phone;a.textContent="Позвонить "+C.phoneView});
+$("#addr").innerHTML=esc(C.city+", "+C.address)+'<span class="tag">демо</span>';
+$("#route").href="https://yandex.ru/maps/?text="+encodeURIComponent(C.city+", "+C.address);
+$("#tgDirect").href="https://t.me/"+C.telegram;
+$("#fName").textContent=C.name;$("#yr").textContent=new Date().getFullYear();
+$("#fContacts").innerHTML='<a href="tel:'+C.phone+'">'+esc(C.phoneView)+'</a><br><a href="https://t.me/'+C.telegram+'" target="_blank" rel="noopener">Telegram</a>';
+const day=(new Date().getDay()+6)%7;
+$("#hours").innerHTML=C.hours.map((h,i)=>{const t=day<5?0:day==5?1:2;return '<dt>'+h[0]+'</dt><dd'+(i==t?' class="today"':'')+'>'+h[1]+'</dd>'}).join("");
+/* tabs + price list */
+function renderTabs(){
+ $("#tabs").innerHTML=Object.entries(C.cats).map(([k,v])=>'<button class="tab" role="tab" aria-selected="'+(k==cat)+'" data-cat="'+k+'">'+v+'</button>').join("");
+ $("#list").innerHTML=C.services.filter(s=>s.cat==cat).map(s=>'<div class="row"><div><h3>'+esc(s.name)+'</h3><p>'+esc(s.desc)+'</p></div><div class="price">'+rub(s.price)+'<span class="dur">~'+s.min+' мин</span></div><button class="btn sm" data-svc="'+s.id+'">Записаться</button></div>').join("");
+}
+$("#tabs").addEventListener("click",e=>{const b=e.target.closest("[data-cat]");if(b){cat=b.dataset.cat;renderTabs()}});
+$("#list").addEventListener("click",e=>{const b=e.target.closest("[data-svc]");if(b){$("#fs").value=b.dataset.svc;goBook()}});
+/* masters */
+const art=m=>'<svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Заглушка портрета: '+esc(m.name)+'"><rect width="400" height="300" fill="#222"/><circle cx="200" cy="120" r="52" fill="#2f2f2f"/><path d="M80 300c0-70 50-100 120-100s120 30 120 100z" fill="#2f2f2f"/><text x="200" y="138" text-anchor="middle" font-family="Oswald,Impact,sans-serif" font-size="56" fill="#c0804f">'+m.ini+'</text></svg>';
+$("#mgrid").innerHTML=C.masters.map(m=>'<article class="m"><div class="ph">'+art(m)+'</div><div class="b"><h3>'+esc(m.name)+'</h3><div class="sp">'+esc(m.sp)+'</div><p>'+esc(m.txt)+'</p><p><b style="color:var(--text)">Услуги:</b> '+esc(m.svc.join(", "))+'</p><button class="btn" data-m="'+m.id+'">Записаться к мастеру</button></div></article>').join("");
+$("#mgrid").addEventListener("click",e=>{const b=e.target.closest("[data-m]");if(b){$("#fm").value=b.dataset.m;goBook()}});
+/* form selects */
+$("#fs").innerHTML='<option value="">Выберите услугу</option>'+Object.entries(C.cats).map(([k,v])=>'<optgroup label="'+v+'">'+C.services.filter(s=>s.cat==k).map(s=>'<option value="'+s.id+'">'+esc(s.name)+' — '+rub(s.price)+'</option>').join("")+'</optgroup>').join("");
+$("#fm").innerHTML='<option value="">Любой мастер</option>'+C.masters.map(m=>'<option value="'+m.id+'">'+esc(m.name)+' — '+esc(m.sp)+'</option>').join("");
+function goBook(){$("#out").classList.remove("show");$("#booking").scrollIntoView();setTimeout(()=>{const f=$("#fn");if(!f.value)f.focus({preventScroll:true})},400)}
+document.addEventListener("click",e=>{const a=e.target.closest("[data-book]");if(a){e.preventDefault();goBook()}});
+/* validation + message */
+function setErr(id,t){$("#e-"+id).textContent=t;$("#"+id).setAttribute("aria-invalid",t?"true":"false")}
+$("#form").addEventListener("submit",e=>{
+ e.preventDefault();
+ const s=svcById($("#fs").value),n=$("#fn").value.trim(),c=$("#fc").value.trim();
+ setErr("fs",s?"":"Выберите услугу");
+ setErr("fn",n.length>=2?"":"Введите имя (не короче 2 символов)");
+ const ok=/^@?[A-Za-z0-9_]{5,32}$/.test(c)||c.replace(/\D/g,"").length>=10;
+ setErr("fc",ok?"":"Укажите телефон (10+ цифр) или Telegram-ник");
+ if(!s||n.length<2||!ok){const f=document.querySelector("[aria-invalid=true]");f&&f.focus();return}
+ const m=C.masters.find(x=>x.id==$("#fm").value),t=$("#ft").value.trim(),k=$("#fk").value.trim();
+ const txt=["Здравствуйте! Хочу записаться в "+C.name+".","Услуга: "+s.name+" — "+rub(s.price),"Мастер: "+(m?m.name:"любой"),"Имя: "+n,"Контакт: "+c].concat(t?["Удобное время: "+t]:[],k?["Комментарий: "+k]:[]).join("\n");
+ $("#msg").textContent=txt;
+ const a=$("#tg");a.href="https://t.me/"+C.telegram+"?text="+encodeURIComponent(txt);
+ $("#out").classList.add("show");$("#out").scrollIntoView({block:"nearest"});
+});
+$("#form").addEventListener("input",e=>{if(e.target.id&&$("#e-"+e.target.id))setErr(e.target.id,"");$("#out").classList.remove("show")});
+/* mobile menu */
+const nav=$("#nav"),bg=$("#burger");
+function menu(o){nav.classList.toggle("open",o);bg.setAttribute("aria-expanded",o);bg.setAttribute("aria-label",o?"Закрыть меню":"Открыть меню")}
+bg.addEventListener("click",()=>menu(!nav.classList.contains("open")));
+nav.addEventListener("click",e=>{if(e.target.closest("a"))menu(false)});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")menu(false)});
+/* reveal */
+const els=document.querySelectorAll(".rv");
+if("IntersectionObserver" in window&&!matchMedia("(prefers-reduced-motion:reduce)").matches){
+ const io=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");io.unobserve(x.target)}}),{threshold:.05});els.forEach(x=>io.observe(x));
+ setTimeout(()=>els.forEach(x=>x.classList.add("in")),2500);
+}else els.forEach(x=>x.classList.add("in"));
+renderTabs();
+</script>
+</body>
+</html>
